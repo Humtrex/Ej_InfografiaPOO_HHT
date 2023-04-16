@@ -1,3 +1,5 @@
+#Humberto Hernández Trejo
+
 class Vehiculo:
     def init(self, tipo="No definido", modelo="No definido", color="No definido"):
         #atributos de la clase
@@ -54,7 +56,7 @@ class Coche(Vehiculo):
 
     def set_velocidad_maxima(self, velocidad_maxima):
         self._velocidad_maxima = velocidad_maxima
-        
+
 #abstaccion
 coche = Coche()
 coche.set_tipo("Coche")
