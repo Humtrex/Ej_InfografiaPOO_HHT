@@ -1,5 +1,6 @@
 #Humberto Hernández Trejo
 
+#Clase Vehiculo con encapsulamiento
 class Vehiculo:
     def init(self, tipo="No definido", modelo="No definido", color="No definido"):
         #atributos de la clase
@@ -31,6 +32,7 @@ class Vehiculo:
     def set_color(self, color):
         self._color = color
 
+#Clase Coche heredada de Vehiculo con encapsulamiento
 class Coche(Vehiculo):
     def init(self, tipo="No definido", modelo="No definido", color="No definido", puertas=0, velocidad_maxima=0):
         super().init(tipo, modelo, color)
@@ -65,10 +67,13 @@ coche.set_color("Rojo")
 coche.set_puertas(2)
 coche.set_velocidad_maxima(250)
 
+#Estado del coche utilizando polimorfismo
 print()
 coche.estado()
 print()
 
+#Encapsulamiento para modificar la velocidad máxima del coche
 coche.set_velocidad_maxima(300)
 
+#Estado del coche con la velocidad máxima modificada
 coche.estado()
